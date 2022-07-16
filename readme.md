@@ -6,3 +6,6 @@ To run our application on our PC, we have to install WWW server (because site is
 # Instruction
 The only thing we have to do is write in input area our message and choose type of conversion, that we want. At the end we have to click "Konwertuj" and app shows us results of the application.
 
+# Technologies
+PHP 8.1.6
+HTML and CSS
