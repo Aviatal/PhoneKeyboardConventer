@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body
 {
     
@@ -10,26 +24,53 @@ div#conteiner
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     
 }
 div#form form div.radio
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-left: 15%;
 }
 div#message
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 div#message span
 {
@@ -39,6 +80,8 @@ header
 {
     width: 60%;
     background-color: #c8cd22;
+    background-image: -o-linear-gradient(#c8cd22, #cbcf6b);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c8cd22), to(#cbcf6b));
     background-image: linear-gradient(#c8cd22, #cbcf6b);
     padding: 30px;
     border-top-left-radius: 20px;
@@ -58,6 +101,8 @@ header h2
 section 
 {
     background-color: #ced24a;
+    background-image: -o-linear-gradient(#cbcf6b, #c8cd22);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#cbcf6b), to(#c8cd22));
     background-image: linear-gradient(#cbcf6b, #c8cd22);
     padding: 30px;
     width: 60%;
@@ -79,7 +124,33 @@ textarea
     background-color: #ddd;
     border-radius: 4px;
     padding: 10px 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
+}
+textarea::-webkit-input-placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+textarea::-moz-placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+textarea:-ms-input-placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+textarea::-ms-input-placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 textarea::placeholder
 {
@@ -107,6 +178,8 @@ input[type=submit]
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 5px;
     border: 1px solid #1b3748;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 input[type=submit]:hover
