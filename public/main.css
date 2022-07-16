@@ -1,0 +1,137 @@
+body
+{
+    
+    margin: 0;
+    background-color: #609ec5;
+    border: 0px;
+}
+div#conteiner
+{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    
+}
+div#form form div.radio
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
+}
+div#message
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#message span
+{
+    margin-top: 20px;
+}
+header 
+{
+    width: 60%;
+    background-color: #c8cd22;
+    background-image: linear-gradient(#c8cd22, #cbcf6b);
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+header h1
+{
+    font-size: x-large;
+}
+header h2
+{
+    font-size: large;
+}
+section 
+{
+    background-color: #ced24a;
+    background-image: linear-gradient(#cbcf6b, #c8cd22);
+    padding: 30px;
+    width: 60%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+div#message
+{
+    font-size: 20px;
+}
+/*INPUTS - START*/
+textarea
+{
+    margin-bottom: 20px;
+    width: 70%;
+    height: 120px;
+    border: 1px solid gray;
+    background-color: #ddd;
+    border-radius: 4px;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+textarea::placeholder
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+textarea:focus
+{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+input[type=radio]
+{
+    margin-bottom: 15px;
+}
+input[type=submit]
+{
+    margin-top: 5px;
+    padding: 2%;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #1b3748;
+    transition: 0.5s;
+}
+input[type=submit]:hover
+{
+    background-color: #FFF;
+}
+/*INPUTS - END*/
+label
+{
+    margin-left: 6px;
+}
+span.red
+{
+    color: red;
+}
+span.blue
+{
+    color: #037c9e;
+}
+p.instruction
+{
+    font-size: 13px;
+}
+input[type=submit].back
+{
+    margin-top: 50px;
+    padding: 20%;
+}
