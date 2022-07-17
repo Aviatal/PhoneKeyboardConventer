@@ -350,16 +350,16 @@ class ConvertController extends AbstractController
                     $message .= "7777,";
                 break;
                 case "P":
-                    $message .= "7777,";
-                break;
-                case "Q":
                     $message .= "77777,";
                 break;
-                case "R":
+                case "Q":
                     $message .= "777777,";
                 break;
-                case "S":
+                case "R":
                     $message .= "7777777,";
+                break;
+                case "S":
+                    $message .= "77777777,";
                 break;
                 case "t":
                     $message .= "8,";
@@ -392,16 +392,16 @@ class ConvertController extends AbstractController
                     $message .= "9999,";
                 break;
                 case "W":
-                    $message .= "9999,";
-                break;
-                case "X":
                     $message .= "99999,";
                 break;
-                case "Y":
+                case "X":
                     $message .= "999999,";
                 break;
-                case "Z":
+                case "Y":
                     $message .= "9999999,";
+                break;
+                case "Z":
+                    $message .= "99999999,";
                 break;
                 case " ":
                     $message .= "0,";
