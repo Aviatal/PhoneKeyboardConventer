@@ -319,6 +319,15 @@ class ConvertController extends AbstractController
                 case "L":
                     $message .= "555555,";
                 break;
+                case "m":
+                    $message .= "6,";
+                break;
+                case "n":
+                    $message .= "66,";
+                break;
+                case "o":
+                    $message .= "666,";
+                break;
                 case "M":
                     $message .= "6666,";
                 break;
@@ -364,7 +373,7 @@ class ConvertController extends AbstractController
                 case "T":
                     $message .= "8888,";
                 break;
-                case "u":
+                case "U":
                     $message .= "88888,";
                 break;
                 case "V":
@@ -379,7 +388,7 @@ class ConvertController extends AbstractController
                 case "y":
                     $message .= "999,";
                 break;
-                case "x":
+                case "z":
                     $message .= "9999,";
                 break;
                 case "W":
@@ -402,7 +411,7 @@ class ConvertController extends AbstractController
                 break;
             }
         }
-
+            
         return substr($message,0,-1);
     }
 
